@@ -37,6 +37,7 @@ class Yahoo(BaseAction):
         self.find_element(Locators.NEXT).click()
 
     def assert_values_for_the_day(self):
+        self.check_element_is_presented(Locators.AUG_17)
         return hc.assert_that(self.find_element(Locators.CELL_VALUE).text, hc.not_none(),
                               f"A value of element {self.find_element(Locators.CELL_VALUE)} is empty")
 
@@ -74,5 +75,6 @@ class Yahoo(BaseAction):
 #         self.find_element(Locators.NEXT).click()
 #
 #     def assert_values_for_the_day(self):
+#         self.check_element_is_presented(Locators.AUG_17)
 #         return hc.assert_that(self.find_element(Locators.CELL_VALUE).text, hc.not_none(),
-#                        f"A value of element {self.find_element(Locators.CELL_VALUE)} is empty")
+#                               f"A value of element {self.find_element(Locators.CELL_VALUE)} is empty")

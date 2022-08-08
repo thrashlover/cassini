@@ -12,6 +12,7 @@ class Locators:
     USERNAME = (By.ID, "login-username")
     PASSWORD = (By.ID, "login-passwd")
     LOGIN_NEXT_BUTTON = (By.ID, "login-signin")
-    CELL_VALUE = (By.XPATH, "//*[@id='fin-cal-events']/div[2]/ul/li[4]/a[5]")
+    AUG_17 = (By.XPATH, "//span[.='17']")
+    CELL_VALUE = (By.XPATH, "//*[@id='fin-cal-events']/div[2]/ul/li[4]/a[1]")
 
 
